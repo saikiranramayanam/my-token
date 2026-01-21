@@ -66,3 +66,9 @@ Allows another address to spend tokens on your behalf.
 transferFrom(address from, address to, uint256 amount) → returns bool
 
 Used by the approved spender to perform delegated transfers.
+### Security Improvements
+
+This version includes:
+- Zero-address validation in `transfer` and `transferFrom`
+- Prevents accidental token burning
+- Proper allowance and balance checks
